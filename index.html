@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firestore</title>
+</head>
+<body>
+    <ul id="contacts-list"></ul>
+    
+    <!-- Aggiungi un modulo per l'inserimento dei dati -->
+    <form id="contact-form">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br>
+        <label for="phone">Telefono:</label>
+        <input type="tel" id="phone" required><br>
+        <input type="submit" value="Aggiungi Contatto">
+    </form>
+    
+    
+    <!-- Librerie Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-firestore-compat.js"></script>
+    <!-- Mio Firebase -->
+    <script src="./js/firebase.js"></script>
+</body>
+</html>
